@@ -1,33 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedStore | Ecommerce Website Desigb</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="header">
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" width="200px">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RedStore | Ecommerce Website Desigb</title>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+            integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+            crossorigin="anonymous">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/logo1bg.png" width="180px"
+                            height="180">
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="Products.html">Products</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="Account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/cart.png" alt width="30px" height="30px">
+                    <img src="images/menu.png" class="menu-icon" alt
+                        onclick="menutoggle">
+                </div>
             </div>
-            <nav>
-                <ul  id="MenuItems">
-                    <li><a href="code.html">Home</a></li>
-                    <li><a href="Products.html">Products</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Account.html">Account</a></li>
-                </ul>
-            </nav>
-            <img src="images/cart.png" alt="" width="30px" height="30px">
-            <img src="images/menu.png" class="menu-icon" alt="" onclick="menutoggle">
-       </div>
-    </div>
-</div>
+        </div>
+        <!-- content section -->
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>A Contact Us page provides guidance for existing customers
+                    and offers an overview of your brand for new visitors. A
+                    strong Contact Us page should contain several elements, such
+                    as a phone number and links to social media channels. It
+                    should also be easy to navigate, as this makes for a
+                    positive customer experience.</p>
+            </div>
+            <div class="container-contact">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-map-marker"
+                                aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>International University,<br>HCM
+                                City,<br>VietNamese</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-envelope-o"
+                                aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>ITITIU20273@student.hcmiu.edu,vn</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa fa-phone-square"
+                                aria-hidden="true"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>03-278-767-92</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form action>
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName"
+                                required="required"
+                                placeholder="VD: Nguyen Van A...">
+                        </div>
+                        <div class="inputBox">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"
+                                required="required"
+                                placeholder="VD: Abc123@gmail.com...">
+                        </div>
+                        <div class="inputBox">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                required="required"
+                                placeholder="Type your message..."></textarea>
+                        </div>
+                        <div class="inputBox-submid">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
